@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SHYAM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Shyam, a dedicated Website Developer specializing in high-performance and responsive web applications.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/s-logo.ico" sizes="any" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-follower"></div>
+
+    <style>
+        * { cursor: none !important; }
+        .cursor-follower, .cursor-dot { display: none; }
+        @media (hover: hover) and (pointer: fine) {
+            .cursor-dot {
+                display: block; position: fixed; top: 0; left: 0; width: 8px; height: 8px;
+                background-color: #fff; border-radius: 50%; z-index: 10001; pointer-events: none;
+                transition: opacity 0.3s ease;
+            }
+            .cursor-follower {
+                display: block; position: fixed; top: 0; left: 0; width: 40px; height: 40px;
+                background-color: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 50%; z-index: 10000; pointer-events: none; backdrop-filter: blur(4px);
+                transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), width 0.4s, height 0.4s, background-color 0.4s, backdrop-filter 0.4s;
+            }
+            .cursor-active {
+                width: 80px; height: 80px; background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.6); backdrop-filter: blur(0.5px);
+            }
+        }
+    </style>
+
+    <div class="page-wrapper">
+        <div id="top"></div>
+
+        <div class="page-sidebar">
+            <nav id="sidebar-nav">
+                <a href="#about" class="navigation-link" data-section="about">
+                    <div class="cube">
+                        <div class="cube-face front"><span class="nav-number">01</span> About</div>
+                        <div class="cube-face bottom"><span class="nav-number">01</span>について</div>
+                    </div>
+                </a>
+                <a href="#works" class="navigation-link" data-section="works">
+                    <div class="cube">
+                        <div class="cube-face front"><span class="nav-number">02</span> Works</div>
+                        <div class="cube-face bottom"><span class="nav-number">02</span>作品</div>
+                    </div>
+                </a>
+                <a href="#expertise" class="navigation-link" data-section="expertise">
+                    <div class="cube">
+                        <div class="cube-face front"><span class="nav-number">03</span> Expertise</div>
+                        <div class="cube-face bottom"><span class="nav-number">03</span>専門知識</div>
+                    </div>
+                </a>
+                <a href="#contact-section" class="navigation-link" data-section="contact-section">
+                    <div class="cube">
+                        <div class="cube-face front"><span class="nav-number">04</span> Contact</div>
+                        <div class="cube-face bottom"><span class="nav-number">04</span>お問い合わせ</div>
+                    </div>
+                </a>
+                <a href="images/r.jpg" class="navigation-link" download="images/r.jpg" target="_blank">
+    <div class="cube">
+        <div class="cube-face front"><span class="nav-number">05</span> Resume</div>
+        <div class="cube-face bottom"><span class="nav-number">05</span>履歴書</div>
+    </div>
+</a>
+            </nav>
+        </div>
+
+        <section class="hero-section">
+            <div class="hero-image-wrapper">
+                <img id="hero-bg" class="hero-image" src="https://cdn.prod.website-files.com/66571474d48f3e8c7c14896c/66571474d48f3e8c7c1489a9_hero-bg.jpg" alt="Background"/>
+            </div>
+            <div class="container hero-content">
+                <h1 class="hero-name1">I'M</h1>
+                <h1 class="hero-name">Shyam</h1>
+                <div class="hero-caption-grid">
+    <span class="caption-tag">#Frontend-Developer</span>
+    <span class="caption-tag">#XAUUSD-Trader</span>
+    <span class="caption-tag">#Web-Architect</span>
+    <span class="caption-tag">#Gold-Market-Analyst</span>
+</div>
+                <h2 class="hero-subheading">Developing high-performance, responsive, and innovative web experiences.</h2>
+                <h4 class="hero-subheading1">高性能、応答性に優れた革新的なウェブエクスペリエンスの開発</h4>
+            </div>
+        </section>
+
+        <div class="marquee-section">
+    <div class="marquee-track-container">
+        <div class="marquee-track">
+            <div class="marquee-item">Web Development</div>
+            <div class="marquee-item">ウェブ開発</div>
+            <div class="marquee-item">Web Development</div>
+            <div class="marquee-item">ウェブ開発</div>
+        </div>
+        <div class="marquee-track">
+            <div class="marquee-item">Web Development</div>
+            <div class="marquee-item">ウェブ開発</div>
+            <div class="marquee-item">Web Development</div>
+            <div class="marquee-item">ウェブ開発</div>
+        </div>
+    </div>
+</div>
+
+<div class="marquee-section">
+    <div class="marquee-track-container marquee-track-reverse">
+        <div class="marquee-track">
+            <div class="marquee-item">Full-Stack Development</div>
+            <div class="marquee-item">フルスタック開発</div>
+            <div class="marquee-item">Full-Stack Development</div>
+            <div class="marquee-item">フルスタック開発</div>
+        </div>
+        <div class="marquee-track">
+            <div class="marquee-item">Full-Stack Development</div>
+            <div class="marquee-item">フルスタック開発</div>
+            <div class="marquee-item">Full-Stack Development</div>
+            <div class="marquee-item">フルスタック開発</div>
+        </div>
+    </div>
+</div>
+
+<div class="marquee-section">
+    <div class="marquee-track-container">
+        <div class="marquee-track">
+            <div class="marquee-item">Three.js & 3D Web</div>
+            <div class="marquee-item">ウェブグラフィックス</div>
+            <div class="marquee-item">Three.js & 3D Web</div>
+            <div class="marquee-item">ウェブグラフィックス</div>
+        </div>
+        <div class="marquee-track">
+            <div class="marquee-item">Three.js & 3D Web</div>
+            <div class="marquee-item">ウェブグラフィックス</div>
+            <div class="marquee-item">Three.js & 3D Web</div>
+            <div class="marquee-item">ウェブグラフィックス</div>
+        </div>
+    </div>
+</div>
+
+<div class="marquee-section">
+    <div class="marquee-track-container marquee-track-reverse">
+        <div class="marquee-track">
+            <div class="marquee-item">React & Next.js</div>
+            <div class="marquee-item">フロントエンド開発</div>
+            <div class="marquee-item">React & Next.js</div>
+            <div class="marquee-item">フロントエンド開発</div>
+        </div>
+        <div class="marquee-track">
+            <div class="marquee-item">React & Next.js</div>
+            <div class="marquee-item">フロントエンド開発</div>
+            <div class="marquee-item">React & Next.js</div>
+            <div class="marquee-item">フロントエンド開発</div>
+        </div>
+    </div>
+</div>
+
+<div class="marquee-section">
+    <div class="marquee-track-container">
+        <div class="marquee-track">
+            <div class="marquee-item">UI/UX Interface Design</div>
+            <div class="marquee-item">ユーザーインターフェース</div>
+            <div class="marquee-item">UI/UX Interface Design</div>
+            <div class="marquee-item">ユーザーインターフェース</div>
+        </div>
+        <div class="marquee-track">
+            <div class="marquee-item">UI/UX Interface Design</div>
+            <div class="marquee-item">ユーザーインターフェース</div>
+            <div class="marquee-item">UI/UX Interface Design</div>
+            <div class="marquee-item">ユーザーインターフェース</div>
+        </div>
+    </div>
+</div>
+
+<div class="marquee-section">
+    <div class="marquee-track-container marquee-track-reverse">
+        <div class="marquee-track">
+            <div class="marquee-item">Mobile App Development</div>
+            <div class="marquee-item">モバイルアプリ開発</div>
+            <div class="marquee-item">Mobile App Development</div>
+            <div class="marquee-item">モバイルアプリ開発</div>
+        </div>
+        <div class="marquee-track">
+            <div class="marquee-item">Mobile App Development</div>
+            <div class="marquee-item">モバイルアプリ開発</div>
+            <div class="marquee-item">Mobile App Development</div>
+            <div class="marquee-item">モバイルアプリ開発</div>
+        </div>
+    </div>
+</div>
+        
+
+        <div class="container">
+            <section id="about" class="section">
+                <h2>I build modern web experiences since 2022</h2>
+                <div class="about-grid">
+                    <div>
+                        <p>I'm <strong>SHYAM</strong>, a dedicated website developer with a passion for building high-quality, high-performance web applications. I transform ideas into functional, responsive, and visually appealing online experiences.</p>
+                        <br>
+                        <p>I specialize in full-stack development, leveraging technologies like <strong>React, Node.js, and modern databases</strong>.</p>
+                    </div>
+                    <div>
+                        <img class="about-image" src="images/sh1.jpg" alt="Portrait of Shyam"/>
+                    </div>
+                </div>
+            </section>
+
+            <section id="works" class="section">
+    <h2 class="section-title" style="
+    display: inline-block;
+    background: radial-gradient(circle, #ff4500 0%, #ff4500 50%, #ff4500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+">
+    Selected Works
+</h2>
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">SkyneTbee</h2>
+            <p class="project-description">A versatile tech studio building custom apps and AI-driven solutions tailored to client needs.</p>
+            <a href="https://www.skynetbee.com/" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/s1.png" alt="SkyneTbee" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">Techgirls</h2>
+            <p class="project-description">Creative PC builders transforming hardware into extraordinary custom rigs and liquid-cooled systems.</p>
+            <a href="https://www.rdcollege.in/techgirls/#home" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/tg1.png" alt="Techgirls" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">Mr. Dhadee</h2>
+            <p class="project-description">A premium men’s salon redefining grooming with precision, creativity, and class.</p>
+            <a href="http://mrdhadee.shop/" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/mrd1.png" alt="Mr. Dhadee" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">RD Symphony</h2>
+            <p class="project-description">Specializing in planning and managing all types of events with creativity, precision, and style.</p>
+            <a href="http://rdsymphony.com/" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/rds1.png" alt="RD Symphony" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">JuiceWRLD</h2>
+            <p class="project-description">A personal tribute site highlighting life, struggles, and achievements through an emotional lens.</p>
+            <a href="http://zevoxwrld.netlify.app/" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/jw1.png" alt="JuiceWRLD" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">Cosmic Mosaic Engine</h2>
+            <p class="project-description">An emoji mosaic generator that rebuilds uploaded images entirely out of thousands of emojis.</p>
+            <a href="https://cosmic-mosaic-engine.netlify.app" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/cme1.png" alt="Cosmic Mosaic Engine" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">Cyberdeck ASCII Lab</h2>
+            <p class="project-description">A creative tool for converting images into intricate text-based ASCII art representations.</p>
+            <a href="https://cyberdeck-ascii-lab.netlify.app" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/cd1.png" alt="Cyberdeck ASCII Lab" class="project-img">
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">RD Sports Academy</h2>
+            <p class="project-description">A premier institution dedicated to nurturing young talent with state-of-the-art sports facilities.</p>
+            <a href="https://www.rdcollege.in/rdsportsacademy/" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/sa1.png" alt="RD Sports Academy" class="project-img">
+        </div>
+    </div>
+    
+    <div class="project-item">
+    <div class="project-info">
+        <h2 class="project-title">Radha Diamonds</h2>
+        <p class="project-description">A premium diamond jewelry boutique offering exquisite, handcrafted collections and timeless elegance for every occasion.</p>
+        <a href="https://rdvivaha.com/radhadiamonds/" class="cta-project" target="_blank">
+            <span class="cube-wrapper">
+                <span class="face front">VISIT →</span>
+                <span class="face bottom">訪問 →</span>
+            </span>
+        </a>
+    </div>
+    <div class="project-card">
+        <img src="images/rad.png" alt="Radha Diamonds" class="project-img">
+    </div>
+</div>
+
+<div class="project-item">
+    <div class="project-info">
+        <h2 class="project-title">Lets Meat & Eat</h2>
+        <p class="project-description">The vibrant culinary hub of RD College, serving a diverse range of fresh flavors and hearty meals for students and staff.</p>
+        <a href="https://rdcollege.in/meetandeat" class="cta-project" target="_blank">
+            <span class="cube-wrapper">
+                <span class="face front">VISIT →</span>
+                <span class="face bottom">訪問 →</span>
+            </span>
+        </a>
+    </div>
+    <div class="project-card">
+        <img src="images/mae.png" alt="Lets Meat & Eat" class="project-img">
+    </div>
+</div>
+
+    <div class="project-item">
+        <div class="project-info">
+            <h2 class="project-title">Popeye Marines</h2>
+            <p class="project-description">Leading maritime solutions provider specializing in advanced vessel design and construction.</p>
+            <a href="https://www.popeyemarines.com/" class="cta-project" target="_blank">
+                <span class="cube-wrapper">
+                    <span class="face front">VISIT →</span>
+                    <span class="face bottom">訪問 →</span>
+                </span>
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="images/p1.png" alt="Popeye Marines" class="project-img">
+        </div>
+    </div>
+</section>
+            <section id="expertise" class="section">
+    <h2 class="section-title">Creative Expertise</h2>
+    <div class="expertise-grid">
+        
+        <div class="expertise-item">
+            <h3>Advanced Front-End</h3>
+            <p>Building the foundation of high-speed web apps.</p>
+            <ul>
+                <li>React.js & Next.js (SSR/ISR)</li>
+                <li>TypeScript for Scalable Code</li>
+                <li>Performance Optimization (Lighthouse 100)</li>
+                <li>State Management (Redux / Zustand)</li>
+            </ul>
+        </div>
+
+        <div class="expertise-item">
+            <h3>3D & Immersive Web</h3>
+            <p>Turning browsers into interactive 3D environments.</p>
+            <ul>
+                <li>Three.js & React Three Fiber</li>
+                <li>WebGL & Custom GLSL Shaders</li>
+                <li>R3F Canvas & Physics Engines</li>
+                <li>GLTF Model Optimization</li>
+            </ul>
+        </div>
+
+        <div class="expertise-item">
+            <h3>Motion & High-End UI</h3>
+            <p>Crafting "Award-Winning" user experiences.</p>
+            <ul>
+                <li>GSAP & ScrollTrigger Animations</li>
+                <li>Framer Motion Interactivity</li>
+                <li>SVG & Canvas Creative Coding</li>
+                <li>Design-to-Code (Figma Perfection)</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+        </div>
+
+       <section id="contact-section" class="footer-section">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Ready to start your project?</h2>
+    
+    <div class="social-buttons-container">
+        <a href="mailto:shyamsantox@gmail.com" class="social-btn email-btn">
+            <i class="fas fa-envelope"></i>
+            
+        </a>
+
+        <a href="https://www.instagram.com/batvrld/" target="_blank" class="social-btn">
+            <i class="fab fa-instagram"></i>
+            
+        </a>
+        <a href="https://wa.me/8667697886" target="_blank" class="social-btn">
+            <i class="fab fa-whatsapp"></i>
+            
+        </a>
+        <a href="https://www.linkedin.com/in/shyam-santhosh-27386a354/" target="_blank" class="social-btn">
+            <i class="fab fa-linkedin-in"></i>
+            
+        </a>
+    </div>
+
+    <div class="scroll-top">
+        <a href="#top" class="scroll-top-link">
+            <h1 class="scroll-top-text">Back to top ↑</h1>
+        </a>
+    </div>
+</section>
+<script>
+  lucide.createIcons();
+</script>
+<script>
+  lucide.createIcons();
+</script>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const dot2 = document.querySelector('.cursor-dot');
+        const follower2 = document.querySelector('.cursor-follower');
+        if (dot2 && follower2) {
+            window.addEventListener('mousemove', (e) => {
+                const { clientX: x, clientY: y } = e;
+                dot2.style.transform = `translate3d(${x - 4}px, ${y - 4}px, 0)`;
+                const fWidth = follower2.offsetWidth / 2;
+                follower2.style.transform = `translate3d(${x - fWidth}px, ${y - fWidth}px, 0)`;
+            });
+            const applyHoverLogic = () => {
+                const targets = document.querySelectorAll('a, button, input, textarea, .cube, [role="button"]');
+                targets.forEach(target => {
+                    target.addEventListener('mouseenter', () => { follower2.classList.add('cursor-active'); dot2.style.opacity = '0'; });
+                    target.addEventListener('mouseleave', () => { follower2.classList.remove('cursor-active'); dot2.style.opacity = '1'; });
+                });
+            };
+            applyHoverLogic();
+            const observer = new MutationObserver(applyHoverLogic);
+            observer.observe(document.body, { childList: true, subtree: true });
+        }
+    </script>
+    
+</body>
+</html>
