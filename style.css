@@ -703,7 +703,9 @@ a.cta-project:hover .cube-wrapper {
   font-weight: 900;
   line-height: 0.9;
   text-transform: uppercase;
-  background-image: url("text4.jpg");
+  background-image: url("fuji3.jpg");
+  filter: grayscale(0%);
+  background-color: rgba(255, 255, 255, 0);
   background-size: cover;
   background-position: center;
   color: transparent;
@@ -711,6 +713,7 @@ a.cta-project:hover .cube-wrapper {
   background-clip: text;
   pointer-events: none;
 }
+
 
 /* 2. Desktop Styles */
 @media (min-width: 768px) {
